@@ -1,0 +1,25 @@
+{
+	"name": "CHF",
+	"description" : "Cryptographic Hash Function",
+	"version": "2.1",
+	"author": "Branden Leong",
+	"manifest_version": 3,
+	"action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"activeTab", 
+		"storage"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"commands": {
+		"_execute_action": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+K"
+			}
+		}
+	}
+}

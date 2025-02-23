@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		}
 	}
-	
+
 }, false);
 
 function updateOut() {
@@ -39,7 +39,7 @@ function updateOut() {
 function copyClipboard() {
 	const x = document.createElement('textarea');
 	x.value = document.getElementById('out_a').innerHTML.replace(/\s/g, '');
-	document.body.appendChild(x);
+	document.body.append(x);
 	x.select();
 	document.execCommand('copy');
 	document.body.removeChild(x);
